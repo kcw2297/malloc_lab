@@ -1,3 +1,6 @@
+/*
+1. Implicit Approach : malloc, free, realloc
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
@@ -37,7 +40,7 @@ team_t team = {
 /*Basic constants and macros*/
 #define WSIZE (4) 
 #define DSIZE (8)
-#define CHUNKSIZE (1<<12) //4096
+#define CHUNKSIZE (1<<12)
 #define MAX(x,y) ((x) > (y) ? (x) : (y))
 
 /*Pack a size and allocated bit into a word*/
