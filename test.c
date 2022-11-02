@@ -66,8 +66,6 @@ static void *coalesce(void *ptr);
 static void *place(void *ptr, size_t asize);
 static void insert_node(void *ptr, size_t size);
 static void delete_node(void *ptr);
-
-
 static void *extend_heap(size_t size)
 {
     void *ptr;                  
@@ -82,7 +80,6 @@ static void *extend_heap(size_t size)
     insert_node(ptr, asize);
     return coalesce(ptr);
 }
-
 static void insert_node(void *ptr, size_t size) {
     int list = 0;
     void *search_ptr = ptr;
@@ -124,7 +121,6 @@ static void insert_node(void *ptr, size_t size) {
     }
     return;
 }
-
 static void delete_node(void *ptr) {
     int list = 0;
     size_t size = GET_SIZE(HDRP(ptr));

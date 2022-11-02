@@ -1,5 +1,5 @@
 /*
-1. Implicit Approach : malloc, free, realloc
+1. Implicit Approach : first fit
  */
 #include <stdio.h>
 #include <stdlib.h>
